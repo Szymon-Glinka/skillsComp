@@ -1,8 +1,10 @@
 <p align="center">
   <img src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/61ca9152-2164-4cfa-b2b0-14bd25c4e0f3">
 </p>
-<img alt="Static Badge" src="https://img.shields.io/badge/skillsComp-Robotyka_Mobilna-blue">
-
+<p align="center">
+  <img alt="Static Badge" src="https://img.shields.io/badge/skillsComp-Robotyka_Mobilna-blue">
+  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/m/Szymon-Glinka/skillsComp">
+</p>
 
 
 # O projekcie
