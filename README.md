@@ -17,7 +17,7 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 ### Informacje o programie
 Program ten jest rozwiązaniem pierwszego zadania, znajduje się w folderze *maze*.
 Algorytm rozwiązujący labirynty składa się z dwóch plików Python'a: ```mazeSolver.py``` i ```backendSolvable.py``` 
-W pliku ```backendSolvable.py``` znajdują się wszystkie funkcje używane do rozwiązania labiryntu, importowania labiryntu z pliku tekstowego, przygotowywania zaimportowanego labiryntu do rozwiązania oraz znajdowania początka labiryntu.  
+W pliku ```backendSolvable.py``` znajdują się wszystkie funkcje używane do rozwiązania labiryntu, importowania labiryntu z pliku tekstowego, przygotowywania zaimportowanego labiryntu do rozwiązania oraz znajdowania początku labiryntu.  
 W pliku ```mazeSolver.py``` znajduje się rozwiązywanie labirynu (sprawdzanie czy da się go rozwiązać, jeśli się nie da to dlaczego) przy użyciu funkcji w pliku ```backendSolvable.py```.   
 
 ### Zasada działania
