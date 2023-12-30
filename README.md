@@ -57,7 +57,10 @@ aplikacji ```app.py``` oraz algorytmów rozpoznających i zaznaczających kolory
 ### Zasada działania
 Kiedy użytkownik zaimportuje wyprany obraz i naciśnie przycisk ```Detect Colors```, program wykona dwie funkcje:  
 * Funkcja pierwsza ```detectColor_markOutlines()```. Wykryje kolor, stworzy maskę, gdzie tylko ten kolor jest zaznaczony, wyznaczy zarys i doda ten zarys do ostatecznej grafiki (sam obrys na czarnym tle). Ta funkcja wykona się 4 razy dla każdego z zdefiniowanego w programie koloru (czerwony, zielony, niebieski, żółty). Ta funkcja również zwraca jakie kolory zostały wykryte.
-* Funckja druga ```detectPositionsOfColors()```. Wykrywa kolory i je zaznacza na tym samym zdjęciu, z którego kolory zostały wykryte. Dodatkowo funkcja ta zwraca słownik - nazwę koloru jako klucz i przpisaną do niego wartość jako tuple, w którym znajdują się: odległość środka prostokąta (prostokątem jest oznaczony wykryty przedmiot w daynym kolorze) od lewego górnego rogu w osi X oraz w osi Y, pozycja środka tego zaznaczenia w odniesieniu od środka ekranu (left, right, top, bottom) oraz odległość tego zaznaczenia od środka obrazu w osi X i Y,
+* Funckja druga ```detectPositionsOfColors()```. Wykrywa kolory i je zaznacza na tym samym zdjęciu, z którego kolory zostały wykryte. Dodatkowo funkcja ta zwraca słownik - nazwę koloru jako klucz i przpisaną do niego wartość jako tuple, w którym znajdują się: odległość środka prostokąta (prostokątem jest oznaczony wykryty przedmiot w daynym kolorze) od lewego górnego rogu w osi X oraz w osi Y, pozycja środka tego zaznaczenia w odniesieniu od środka ekranu (left, right, top, bottom) oraz odległość tego zaznaczenia od środka obrazu w osi X i Y
+
+### Zapisywanie danych do pliku tekstowego
+Dodatkową funkcją programu jest możliwość zapisania danych do pliku tekstowego przyciskiem ```Plot Data```
   
 # ReadingQR
 
