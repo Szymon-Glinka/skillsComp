@@ -49,13 +49,13 @@ zmienić ```level=logging.ERROR``` na ```level=logging.DEBUG```
 
 # ColorRecognition
 ### Informacje o programie
-Ten program jest rozwiązaniem 3 zadania, znajduje się w folderze **_colorRecogniotion_** i składa się zx dwóch plików.  
-Aplikacji ```app.py``` oraz algorytmów rozpoznających oraz zaznaczających kolory w pliku ```backend.py```
+Ten program jest rozwiązaniem 3 zadania, znajduje się w folderze **_colorRecogniotion_** i składa się z dwóch plików,    
+aplikacji ```app.py``` oraz algorytmów rozpoznających i zaznaczających kolory w pliku ```backend.py```
 
 ### Zasada działania
 Kiedy użytkownik zaimportuje wyprany obraz i naciśnie przycisk ```Detect Colors```, program wykona dwie funkcje:  
-* Funkcja pierwsza ```detectColor_markOutlines()```. Wykryje kolor, stworzy maskę, gdzie tylko ten kolor jest zaznaczony, wyznaczy zarys i doda ten zarys do ostatecznej grafiki (same obrysy na czarnym tle). Ta część wkona się 4 razy dla każdego z zdefiniowanego koloru (czerwony, zielony, niebieski, żółty). Ta funkcja również zwraca jakie kolory zostały wykryte.
-* Funckja druga ```detectPositionsOfColors()```. Wykrywa kolory i je zaznacza ale na tym samym zdjęciu, z którego kolory zostały wykryte. Dodatkowo funkcja ta zwraca słownik - nazwa koloru jako klucz, a jako wartość tuple, w którym znajdują się: odległość środka prostokąta, którym jest oznaczony wykryty przedmiot w daynym kolorze, od lewego górnego rogu w osi X oraz w osi Y, pozycja tego zaznaczenia w odniesieniu od środka ekrany (lef, right, top, left) oraz odległość tego zaznaczenia od środka obrazu w osi X i Y,
+* Funkcja pierwsza ```detectColor_markOutlines()```. Wykryje kolor, stworzy maskę, gdzie tylko ten kolor jest zaznaczony, wyznaczy zarys i doda ten zarys do ostatecznej grafiki (sam obrys na czarnym tle). Ta funkcja wykona się 4 razy dla każdego z zdefiniowanego w programie koloru (czerwony, zielony, niebieski, żółty). Ta funkcja również zwraca jakie kolory zostały wykryte.
+* Funckja druga ```detectPositionsOfColors()```. Wykrywa kolory i je zaznacza na tym samym zdjęciu, z którego kolory zostały wykryte. Dodatkowo funkcja ta zwraca słownik - nazwę koloru jako klucz i przpisaną do niego wartość jako tuple, w którym znajdują się: odległość środka prostokąta (prostokątem jest oznaczony wykryty przedmiot w daynym kolorze) od lewego górnego rogu w osi X oraz w osi Y, pozycja środka tego zaznaczenia w odniesieniu od środka ekranu (left, right, top, bottom) oraz odległość tego zaznaczenia od środka obrazu w osi X i Y,
   
 # ReadingQR
 
