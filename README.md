@@ -24,23 +24,24 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 # MazeSolver
 ### Informacje o programie
 Program ten jest rozwiązaniem pierwszego zadania, znajduje się w folderze **_maze_**.
-Algorytm rozwiązujący labirynty składa się z dwóch plików Python'a: ```mazeSolver.py``` i ```backendSolvable.py``` 
+Program rozwiązujący labirynty składa się z dwóch plików Python'a: ```mazeSolver.py``` i ```backendSolvable.py``` 
 W pliku ```backendSolvable.py``` znajdują się wszystkie funkcje używane do rozwiązania labiryntu, importowania labiryntu z pliku tekstowego, przygotowywania zaimportowanego labiryntu do rozwiązania oraz znajdowania początku labiryntu.  
-W pliku ```mazeSolver.py``` znajduje się funckja rozwiązująca labirynt (sprawdzanie czy da się go rozwiązać, jeśli się nie da to dlaczego), która kożysta z wszystkich funkcji w pliku ```backendSolvable.py```.   
+W pliku ```mazeSolver.py``` znajduje się funckja rozwiązująca labirynt (sprawdzanie czy da się go rozwiązać, jeśli się nie da to dlaczego) przy pomocy wszystkich funkcji w pliku ```backendSolvable.py```.   
 
 ### Zasada działania
-Program sprawdza czy dookoła obecnego położenia są wolne komórki (" "), jeżeli tak zapisuje wszystkie pozycje do których jest w stanie *przejść* w następnym kroku. Następnie wykonuje możliwy ruch usuwając go jednocześnie z listy ruchów mopżliwych do wykonania, a poprzednią pozycje dodaje do tabeli z poprzednimi ruchami. Jeżeli dana pozycja nie ma żadnego możliwego ruchu do wykonania, progam wraca do innych możliowych pozycji (jeżeli takie zostały zapisane podczas np. jakiegoś rozwidlenia).  
-Algorytm zwraca ```True``` jeżeli dotarł do wyjścia ```E```. Jeżeli nie jest we stanie wykonać żadnych ruchów program zwróci ```False```. Dodatkowo jeżeli labirynt jest niemożliwy do rozwiązania program również zwróci dlaczego, np. ```False, E5 - No solution found``` - oznacza, to że w podanym labiryncie znajduje się więcej niż jedno rozpoczęcie (więcej niż jedna litera, od której program ma zacząć rozwiązywanie)
+Program sprawdza czy dookoła obecnego położenia są wolne komórki - " ", jeżeli tak zapisuje wszystkie pozycje do których jest w stanie *przejść* w następnym kroku. Następnie wykonuje możliwy ruch usuwając go jednocześnie z listy ruchów możliwych do wykonania, a poprzednią pozycje dodaje do tabeli z poprzednimi popzycjami. Jeżeli dana pozycja nie ma żadnego możliwego ruchu do wykonania, progam wraca do innych możliowych pozycji (jeżeli takie zostały zapisane podczas np. jakiegoś rozwidlenia).  
+Algorytm zwraca ```True``` jeżeli dotarł do wyjścia **E**. Jeżeli nie jest we stanie wykonać żadnych ruchów program zwróci ```False```. Dodatkowo jeżeli labirynt jest niemożliwy do rozwiązania program również zwróci dlaczego, np. **_False, E5 - No solution found_** - oznacza, to że w podanym labiryncie znajduje się więcej niż jedno rozpoczęcie (więcej niż jedna litera, od której program ma zacząć rozwiązywanie)
 
 ### Używanie programu do rozwiązania labiryntu
-Aby rozwiązać wybrany labirynt należy wpisać lokalizację pliku tekstowego z tym labiryntem   
+Aby rozwiązać wybrany labirynt należy:   
+* wpisać lokalizację pliku tekstowego z tym labiryntem   
 ```maze = getMazeFromTXT(r"TUTAJ LOKALIZACJA PLIKU")```   
 NP.  
 ```maze = getMazeFromTXT(r"F:\skillscomp\z1textFiles\labirynt9.txt")```  
-Następine należy wpisać jaka litera oznacza pozycję od której program ma zacząć rozwiązywanie labiryntu  
+* wpisać jaka litera oznacza pozycję od której program ma zacząć rozwiązywanie labiryntu  
 ```solvable, info = mazeSolver(maze, "LITERA")```   
 NP.   
-```solvable, info = mazeSolver(maze, "r") #solve the maze``` - Program rozwiąże labirynt dla małej litery *r*  
+```solvable, info = mazeSolver(maze, "r")``` - Program rozwiąże labirynt dla małej litery **_r_**  
 Aby wyświetlić dane do debagowania należy w poniższej lini   
 ```logging.basicConfig(level=logging.ERROR, format="%(asctime)s %(levelname)s %(message)s", datefmt="%y-%m-%d %H:%M")```   
 zmienić ```level=logging.ERROR``` na ```level=logging.DEBUG```
