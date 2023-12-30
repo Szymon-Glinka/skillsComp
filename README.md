@@ -36,7 +36,7 @@ Algorytm zwraca ```True``` jeżeli dotarł do wyjścia ```E```. Jeżeli nie jest
 Aby rozwiązać wybrany labirynt należy wpisać lokalizację pliku tekstowego z tym labiryntem   
 ```maze = getMazeFromTXT(r"TUTAJ LOKALIZACJA PLIKU")```   
 NP.  
-```maze = getMazeFromTXT(r"F:\skillscomp\z1textFiles\labirynt9.txt") #get maze from txt file```  
+```maze = getMazeFromTXT(r"F:\skillscomp\z1textFiles\labirynt9.txt")```  
 Następine należy wpisać jaka litera oznacza pozycję od której program ma zacząć rozwiązywanie labiryntu  
 ```solvable, info = mazeSolver(maze, "LITERA")```   
 NP.   
