@@ -41,7 +41,9 @@ NP.
 * wpisać jaka litera oznacza pozycję od której program ma zacząć rozwiązywanie labiryntu  
 ```solvable, info = mazeSolver(maze, "LITERA")```   
 NP.   
-```solvable, info = mazeSolver(maze, "r")``` - Program rozwiąże labirynt dla małej litery **_r_**  
+```solvable, info = mazeSolver(maze, "r")``` - Program rozwiąże labirynt dla małej litery **_r_**
+
+### Debugowanie
 Aby wyświetlić dane do debagowania należy w poniższej lini   
 ```logging.basicConfig(level=logging.ERROR, format="%(asctime)s %(levelname)s %(message)s", datefmt="%y-%m-%d %H:%M")```   
 zmienić ```level=logging.ERROR``` na ```level=logging.DEBUG```
