@@ -44,9 +44,8 @@ NP.
 ```solvable, info = mazeSolver(maze, "r")``` - Program rozwiąże labirynt dla małej litery **_r_**
 
 ### Debugowanie
-Aby wyświetlić dane do debagowania należy w poniższej lini   
+Aby wyświetlić dane do debagowania należy w poniższej lini zmienić ```level=logging.ERROR``` na ```level=logging.DEBUG```   
 ```logging.basicConfig(level=logging.ERROR, format="%(asctime)s %(levelname)s %(message)s", datefmt="%y-%m-%d %H:%M")```   
-zmienić ```level=logging.ERROR``` na ```level=logging.DEBUG```
 
 # PID
 
