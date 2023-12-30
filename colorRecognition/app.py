@@ -33,7 +33,7 @@ class App(ctk.CTk):
         self.buttonOpen.grid(row=2, column=0, padx=10, pady=(0, 10), sticky="sew")
 
         #--- button to delete image ---
-        self.buttonDel = ctk.CTkButton(self, text="Print Data", command=self.printData)
+        self.buttonDel = ctk.CTkButton(self, text="Plot Data", command=self.printData)
         self.buttonDel.grid(row=2, column=2, padx=10, pady=(0, 10), sticky="sew")
 
         #--- button to detect colors ---
