@@ -23,7 +23,7 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 
 # MazeSolver
 ### Informacje o programie
-Program ten jest rozwiązaniem pierwszego zadania, znajduje się w folderze *maze*.
+Program ten jest rozwiązaniem pierwszego zadania, znajduje się w folderze **_maze_**.
 Algorytm rozwiązujący labirynty składa się z dwóch plików Python'a: ```mazeSolver.py``` i ```backendSolvable.py``` 
 W pliku ```backendSolvable.py``` znajdują się wszystkie funkcje używane do rozwiązania labiryntu, importowania labiryntu z pliku tekstowego, przygotowywania zaimportowanego labiryntu do rozwiązania oraz znajdowania początku labiryntu.  
 W pliku ```mazeSolver.py``` znajduje się funckja rozwiązująca labirynt (sprawdzanie czy da się go rozwiązać, jeśli się nie da to dlaczego), która kożysta z wszystkich funkcji w pliku ```backendSolvable.py```.   
@@ -48,7 +48,15 @@ zmienić ```level=logging.ERROR``` na ```level=logging.DEBUG```
 # PID
 
 # ColorRecognition
+### Informacje o programie
+Ten program jest rozwiązaniem 3 zadania, znajduje się w folderze **_colorRecogniotion_** i składa się zx dwóch plików.  
+Aplikacji ```app.py``` oraz algorytmów rozpoznających oraz zaznaczających kolory w pliku ```backend.py```
 
+### Zasada działania
+Kiedy użytkownik zaimportuje wyprany obraz, program wykona dwie funkcje:  
+* Funkcja pierwsza ```detectColor_markOutlines()```. Wykryje kolor, stworzy maskę, gdzie tylko ten kolor jest zaznaczony, wyznaczy zarys i doda ten zarys do ostatecznej grafiki (same obrysy na czarnym tle). Ta część wkona się 4 razy dla każdego z zdefiniowanego koloru (czerwony, zielony, niebieski, żółty). Ta funkcja również zwraca jakie kolory zostały wykryte.
+* Funckja druga ```detectPositionsOfColors()```. Wykrywa kolory i je zaznacza ale na tym samym zdjęciu, z którego kolory zostały wykryte. Dodatkowo funkcja ta zwraca słownik - nazwa koloru jako klucz, a jako wartość tuple, w którym znajdują się: odległość środka prostokąta, którym jest oznaczony wykryty przedmiot w daynym kolorze, od lewego górnego rogu w osi X oraz w osi Y, pozycja tego zaznaczenia w odniesieniu od środka ekrany (lef, right, top, left) oraz odległość tego zaznaczenia od środka obrazu w osi X i Y,
+  
 # ReadingQR
 
 # All_in-one
