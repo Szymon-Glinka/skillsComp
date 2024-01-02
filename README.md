@@ -30,7 +30,7 @@ W pliku ```mazeSolver.py``` znajduje się funckja rozwiązująca labirynt (spraw
 
 ### Zasada działania
 Program sprawdza czy dookoła obecnego położenia są wolne komórki - " ", jeżeli tak zapisuje wszystkie pozycje do których jest w stanie *przejść* w następnym kroku. Następnie wykonuje możliwy ruch usuwając go jednocześnie z listy ruchów możliwych do wykonania, a poprzednią pozycje dodaje do tabeli z poprzednimi popzycjami. Jeżeli dana pozycja nie ma żadnego możliwego ruchu do wykonania, progam wraca do innych możliowych pozycji (jeżeli takie zostały zapisane podczas np. jakiegoś rozwidlenia).  
-Algorytm zwraca ```True``` jeżeli dotarł do wyjścia **E** i liste z dokładnym rozwiązaniem labiryntu, np. **_['RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'DOWN']_**. Jeżeli nie jest we stanie dotrzeć do wyjścia program zwróci ```False``` oraz dlaczego nie rozwiązał labiryntu, np. **_False, E5 - No solution found_** - oznacza, to że w podanym labiryncie znajduje się więcej niż jedno rozpoczęcie (więcej niż jedna litera, od której program ma zacząć rozwiązywanie)
+Algorytm zwraca ```True``` jeżeli dotarł do wyjścia **E** i liste z dokładnym rozwiązaniem labiryntu, np. **_['RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'DOWN']_**. Jeżeli program nie jest we stanie dotrzeć do wyjścia zwróci ```False``` oraz dlaczego nie rozwiązał labiryntu, np. **_E3 - multiple starting positions for letter 'r'_** - oznacza, to że w podanym labiryncie znajduje się więcej niż jedno rozpoczęcie (więcej niż jedna litera, od której program ma zacząć rozwiązywanie)
 
 ### Używanie programu do rozwiązania labiryntu
 Aby rozwiązać wybrany labirynt należy:   
