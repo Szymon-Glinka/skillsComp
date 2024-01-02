@@ -30,7 +30,7 @@ W pliku ```mazeSolver.py``` znajduje się funckja rozwiązująca labirynt (spraw
 
 ### Zasada działania
 Program sprawdza czy dookoła obecnego położenia są wolne komórki - " ", jeżeli tak zapisuje wszystkie pozycje do których jest w stanie *przejść* w następnym kroku. Następnie wykonuje możliwy ruch usuwając go jednocześnie z listy ruchów możliwych do wykonania, a poprzednią pozycje dodaje do tabeli z poprzednimi popzycjami. Jeżeli dana pozycja nie ma żadnego możliwego ruchu do wykonania, progam wraca do innych możliowych pozycji (jeżeli takie zostały zapisane podczas np. jakiegoś rozwidlenia).  
-Algorytm zwraca ```True``` jeżeli dotarł do wyjścia **E**. Jeżeli nie jest we stanie wykonać żadnych ruchów program zwróci ```False```. Dodatkowo jeżeli labirynt jest niemożliwy do rozwiązania program również zwróci dlaczego, np. **_False, E5 - No solution found_** - oznacza, to że w podanym labiryncie znajduje się więcej niż jedno rozpoczęcie (więcej niż jedna litera, od której program ma zacząć rozwiązywanie)
+Algorytm zwraca ```True``` jeżeli dotarł do wyjścia **E** i liste z dokładnym rozwiązaniem labiryntu, np. ['RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'DOWN']. Jeżeli nie jest we stanie wykonać żadnych ruchów program zwróci ```False```. Dodatkowo jeżeli labirynt jest niemożliwy do rozwiązania program również zwróci dlaczego, np. **_False, E5 - No solution found_** - oznacza, to że w podanym labiryncie znajduje się więcej niż jedno rozpoczęcie (więcej niż jedna litera, od której program ma zacząć rozwiązywanie)
 
 ### Używanie programu do rozwiązania labiryntu
 Aby rozwiązać wybrany labirynt należy:   
@@ -41,10 +41,7 @@ NP.
 * wpisać jaka litera oznacza pozycję od której program ma zacząć rozwiązywanie labiryntu  
 ```solvable, info = mazeSolver(maze, "LITERA")```   
 NP.   
-```solvable, info = mazeSolver(maze, "r")``` - Program rozwiąże labirynt dla małej litery **_r_**   
-Funkcja **_mazeSolver()_** zwraca dwa argumenty:
-* True, jeżeli labirynt da się rozwiązać i liste z rozwiązaniem labiryntu, np. ['RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'DOWN']
-* False, jeżeli labiryntu nie da się rozwiązać i wyjaśnienie dlaczego labiryntu nie da się rozwiązać, np. E2 - **_No place to put exit found_**
+```solvable, info = mazeSolver(maze, "r")``` - Program rozwiąże labirynt dla małej litery **_r_**
 
 ### Debugowanie
 Aby wyświetlić dane do debagowania należy w poniższej lini zmienić **_level=logging.ERROR_** na **_level=logging.DEBUG_**   
