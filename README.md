@@ -25,7 +25,7 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 ### Informacje o programie
 Program ten jest rozwiązaniem pierwszego zadania, znajduje się w folderze **_maze_**.
 Program rozwiązujący labirynty składa się z dwóch plików Python'a: ```mazeSolver.py``` i ```backendSolvable.py``` 
-W pliku ```backendSolvable.py``` znajdują się wszystkie funkcje używane do rozwiązania labiryntu, importowania labiryntu z pliku tekstowego, przygotowywania zaimportowanego labiryntu do rozwiązania oraz znajdowania początku labiryntu.  
+W pliku ```backendSolvable.py``` znajdują się wszystkie funkcje używane do rozwiązania labiryntu, importowania labiryntu z pliku tekstowego, przygotowywania zaimportowanego labiryntu do rozwiązania, znajdowania początku labiryntu i wytaczania ścieżki do wyjscia.  
 W pliku ```mazeSolver.py``` znajduje się funckja rozwiązująca labirynt (sprawdzanie czy da się go rozwiązać, jeśli się nie da to dlaczego) przy pomocy wszystkich funkcji w pliku ```backendSolvable.py```.   
 
 ### Zasada działania
@@ -41,11 +41,14 @@ NP.
 * wpisać jaka litera oznacza pozycję od której program ma zacząć rozwiązywanie labiryntu  
 ```solvable, info = mazeSolver(maze, "LITERA")```   
 NP.   
-```solvable, info = mazeSolver(maze, "r")``` - Program rozwiąże labirynt dla małej litery **_r_**
+```solvable, info = mazeSolver(maze, "r")``` - Program rozwiąże labirynt dla małej litery **_r_**   
+Funkcja **_mazeSolver()_** zwraca dwa argumenty:
+* True, jeżeli labirynt da się rozwiązać i liste z rozwiązaniem labiryntu, np. ['RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'DOWN']
+* False, jeżeli labiryntu nie da się rozwiązać i wyjaśnienie dlaczego labiryntu nie da się rozwiązać, np. E2 - **_No place to put exit found_**
 
 ### Debugowanie
 Aby wyświetlić dane do debagowania należy w poniższej lini zmienić **_level=logging.ERROR_** na **_level=logging.DEBUG_**   
-```logging.basicConfig(level=logging.ERROR, format="%(asctime)s %(levelname)s %(message)s", datefmt="%y-%m-%d %H:%M")```   
+```logging.basicConfig(level=logging.ERROR, format="%(asctime)s %(levelname)s %(message)s", datefmt="%y-%m-%d %H:%M")```
 
 # PID
 
