@@ -22,6 +22,8 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 * [All in one](#All_in-one)
 
 # MazeSolver
+<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/f0805cfc-add5-4541-b7c3-a47464567184"></p>
+
 ### Informacje o programie
 Program ten jest rozwiązaniem pierwszego zadania, znajduje się w folderze **_maze_**.
 Program rozwiązujący labirynty składa się z dwóch plików Python'a: ```mazeSolver.py``` i ```backendSolvable.py``` 
@@ -50,6 +52,8 @@ Aby wyświetlić dane do debagowania należy w poniższej lini zmienić **_level
 # PID
 
 # ColorRecognition
+<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/2cb03263-dabc-40e4-a9d6-27ea14f3e28f"></p>
+
 ### Informacje o programie
 Ten program jest rozwiązaniem 3 zadania, znajduje się w folderze **_colorRecogniotion_** i składa się z dwóch plików,    
 aplikacji ```app.py``` oraz algorytmów rozpoznających i zaznaczających kolory w pliku ```backend.py```
@@ -63,5 +67,6 @@ Kiedy użytkownik zaimportuje wyprany obraz i naciśnie przycisk ```Detect Color
 Dodatkową funkcją programu jest możliwość zapisania danych do pliku tekstowego przyciskiem ```Plot Data```
   
 # ReadingQR
+<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/97d29acb-d1b7-4ad0-bbf6-2aa091bdcd3b"></p>
 
 # All_in-one
