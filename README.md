@@ -52,7 +52,8 @@ Aby wyświetlić dane do debagowania należy w poniższej lini zmienić **_level
 # PID
 
 # ColorRecognition
-<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/2cb03263-dabc-40e4-a9d6-27ea14f3e28f"></p>
+<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/5b01f412-aaad-421d-9789-c10d4725b503"></p>
+
 
 ### Informacje o programie
 Ten program jest rozwiązaniem 3 zadania, znajduje się w folderze **_colorRecogniotion_** i składa się z dwóch plików,    
