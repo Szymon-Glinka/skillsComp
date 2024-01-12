@@ -15,6 +15,7 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 
 ### TO DO:
 - [ ] update color recognition
+- [ ] make an app for maze solver
 
 
 # Spis treści:
