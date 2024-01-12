@@ -80,15 +80,15 @@ Program ten jest rozwiązaniem 4 zadania, znadjuje się w folderze **_qrCode_** 
 aplikacji ```app.py``` oraz algorytmów przekształcających i rozpoznających kody QR ```backend.py```
 
 ### Zasada działania
-Kiedy użytkownik zaimportuje kod QR i naciśnie przycisk ```detect QR```, program wykona poniższe funkcje. Jeżeli jednej z poniższych funkcji uda się odczytać kod qr, pozostałe nie zostaną wykonane:   
-Najpierw program zastosuje poszczególne filtry dla pierwotnego zdjęcia:
+Kiedy użytkownik zaimportuje kod QR i naciśnie przycisk ```detect QR```, program wykona poniższe funkcje. Jeżeli jednej z poniższych funkcji uda się odczytać kod qr, pozostałe nie zostaną wykonane:     
+Najpierw program zastosuje poszczególne filtry dla pierwotnego zdjęcia:     
 * znajdzie rogi kodu qr i go "wyprostuje" poczym spróbuje odczytać kod QR
 * zastosuje rozmycie Gaussa i spóbuje odczytać kod QR
-* użyje funkcji ```fixBlur()```, której zadaniem jest pozbycie się rozmazania obrazu, nastęnie spróbuje odczytać kod QR
+* użyje funkcji ```fixBlur()```, której zadaniem jest pozbycie się rozmazania obrazu, nastęnie spróbuje odczytać kod QR        
 Jeżeli żadnej z powyższych funkcji nie udało się odczytać kodu QR program zastosuje poszczególne filtr dla zdjęcia wcześniej zmodyfikowanego. Program:
 * znajdzie rogi kodu qr i go "wyprostuje" poczym spróbuje odczytać kod QR
 * użyje zdjęcia uzyskanego przez użycie powyższego filtra i zastosuje rozmycie Gaussa, a następnie spróbuje odczytać kod QR
-* wykona funkcję ```fixBlur()``` na zdjęciu uzyskanym po zastosowaniu rozmycia Gaussa i spróbuje odczytać kod QR
+* wykona funkcję ```fixBlur()``` na zdjęciu uzyskanym po zastosowaniu rozmycia Gaussa i spróbuje odczytać kod QR        
 Jeżel żadnej z powyższych funkcji nie uda się odczytać kodu QR program zwróci **_No QR code detected_**
 
 ### Zapisywanie danych do pliku tekstowego
