@@ -14,8 +14,6 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 *logo zostało wygenerowane przy pomocy [simple logo generator](https://creecros.github.io/simple_logo_gen/)*
 
 ### TO DO:
-- [ ] update color recognition
-- [ ] update QR code scanner
 - [ ] make an app for maze solver
 
 
