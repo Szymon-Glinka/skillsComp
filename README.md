@@ -10,7 +10,7 @@
 </p>
 
 # O projekcie
-To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp - Robotyka Mobilna](https://skillscomp.itee.radom.pl/service/robotyka-mobilna/) razem z wszystkimi plikami użytymi podczas tworzenia tych programów (foldery ```test```). Dodatkowo znajduje się jeden program, który jest połączeniem wszystkich czterech zadań w jedną aplikację.  
+To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp - Robotyka Mobilna](https://skillscomp.itee.radom.pl/service/robotyka-mobilna/) razem z wszystkimi plikami użytymi podczas tworzenia tych programów (foldery ```test```).  
 *logo zostało wygenerowane przy pomocy [simple logo generator](https://creecros.github.io/simple_logo_gen/)*
 
 ### TO DO:
@@ -24,7 +24,6 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 * [PID](#PID)
 * [Color Recognition](#ColorRecognition)
 * [Reading QR codes](#ReadingQR)
-* [All in one](#All_in-one)
 
 # MazeSolver
 <p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/f0805cfc-add5-4541-b7c3-a47464567184"></p>
@@ -55,10 +54,10 @@ Aby wyświetlić dane do debagowania należy w poniższej lini zmienić **_level
 ```logging.basicConfig(level=logging.ERROR, format="%(asctime)s %(levelname)s %(message)s", datefmt="%y-%m-%d %H:%M")```
 
 # PID
+<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/a8ec10c5-6833-4c41-a882-81c891f7b855"></p>
 
 # ColorRecognition
-<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/5b01f412-aaad-421d-9789-c10d4725b503"></p>
-
+<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/f139313b-e086-4672-896f-35e4f989a99e"></p>
 
 ### Informacje o programie
 Ten program jest rozwiązaniem 3 zadania, znajduje się w folderze **_colorRecogniotion_** i składa się z dwóch plików,    
@@ -73,7 +72,7 @@ Kiedy użytkownik zaimportuje wyprany obraz i naciśnie przycisk ```Detect Color
 Dodatkową funkcją programu jest możliwość zapisania danych do pliku tekstowego przyciskiem ```Plot Data```
   
 # ReadingQR
-<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/97d29acb-d1b7-4ad0-bbf6-2aa091bdcd3b"></p>
+<p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/5b9c1ccb-1544-4b63-a660-e38b3b336449"></p>
 
 ### Informacje o programie
 Program ten jest rozwiązaniem 4 zadania, znadjuje się w folderze **_qrCode_** i składa się z dwóch plików,   
@@ -95,5 +94,3 @@ Jeżel żadnej z powyższych funkcji nie uda się odczytać kodu QR program zwr�
 
 ### Zapisywanie danych do pliku tekstowego
 Dodatkową funkcją programu jest, tak jak w programie **_colorRecognition_**, możliwość zapisania danych do pliku tekstowego przyciskiem ```Plot Data```
-
-# All_in-one
