@@ -12,10 +12,6 @@
 To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp - Robotyka Mobilna](https://skillscomp.itee.radom.pl/service/robotyka-mobilna/) razem z wszystkimi plikami użytymi podczas tworzenia tych programów (foldery ```test```).  
 *logo zostało wygenerowane przy pomocy [simple logo generator](https://creecros.github.io/simple_logo_gen/)*
 
-### TO DO:
-- [ ] make an app for maze solver
-
-
 # Spis treści:
 * [Maze Solver](#MazeSolver)
 * [PID](#PID)
