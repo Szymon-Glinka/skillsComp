@@ -68,7 +68,7 @@ Dodatkowo użytkownik może zmienić poniższe wartości:
 * zmianę czasu, domyślnie 0.1
 
 ### Metoda dobierania nastaw Zeiglera-nicholsa
-Oscylacja układu zostałąa wyznaczona eksperymentalnie, używając ręcznej manipulacji nastaw aplikacji.   
+Oscylacja układu została wyznaczona eksperymentalnie, używając ręcznej manipulacji nastaw aplikacji.   
 Układ oscyluje przy nastawach: Ki = 0, Kd = 0, Ki = 7.(27)  czyli Ku = 7.(27)   
 Okres oscylacji układu (Tu): 0.1s   
 Do wyznaczenia nastaw użyto poniższych wzorów:  
