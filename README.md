@@ -68,8 +68,8 @@ Dodatkowo użytkownik może zmienić poniższe wartości:
 * zmianę czasu, domyślnie 0.1
 
 ### Metoda dobierania nastaw Zeiglera-nicholsa
-Oscylacja układu została wyznaczona eksperymentalnie, używając ręcznej manipulacji nastaw aplikacji.   
-Układ oscyluje przy nastawach: Ki = 0, Kd = 0, Ki = 7.(27)  czyli Ku = 7.(27)   
+Oscylacja układu została wyznaczona eksperymentalnie, używając ręcznej manipulacji nastaw w aplikacji.   
+Układ oscyluje przy nastawach: Ki = 0, Kd = 0, Kp = 7.(27)  czyli Ku = 7.(27)   
 Okres oscylacji układu (Tu): 0.1s   
 Do wyznaczenia nastaw użyto poniższych wzorów:  
 * Kp = 0.6 * Ku = 0.6 * 7.(27) = +-4.36
@@ -81,11 +81,11 @@ Do wyznaczenia nastaw użyto poniższych wzorów:
 <p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/f139313b-e086-4672-896f-35e4f989a99e"></p>
 
 ### Informacje o programie
-Ten program jest rozwiązaniem 3 zadania, znajduje się w folderze **_colorRecogniotion_** i składa się z dwóch plików,    
+Ten program jest rozwiązaniem trzeciego zadania, znajduje się w folderze **_colorRecogniotion_** i składa się z dwóch plików,    
 aplikacji ```app.py``` oraz algorytmów rozpoznających i zaznaczających kolory w pliku ```backend.py```
 
 ### Zasada działania
-Kiedy użytkownik zaimportuje wyprany obraz i naciśnie przycisk ```Detect Colors```, program wykona dwie funkcje:  
+Kiedy użytkownik zaimportuje wybrany obraz i naciśnie przycisk ```Detect Colors```, program wykona dwie funkcje:  
 * Funkcja pierwsza ```detectColor_markOutlines()```. Wykryje kolor, stworzy maskę, gdzie tylko ten kolor jest zaznaczony, wyznaczy zarys i doda ten zarys do ostatecznej grafiki (sam obrys na czarnym tle). Ta funkcja wykona się 4 razy dla każdego z zdefiniowanego w programie koloru (czerwony, zielony, niebieski, żółty). Ta funkcja również zwraca jakie kolory zostały wykryte.
 * Funckja druga ```detectPositionsOfColors()```. Wykrywa kolory i je zaznacza na tym samym zdjęciu, z którego kolory zostały wykryte. Dodatkowo funkcja ta zwraca słownik - nazwę koloru jako klucz i przpisaną do niego wartość jako tuple, w którym znajdują się: odległość środka prostokąta (prostokątem jest oznaczony wykryty przedmiot w daynym kolorze) od lewego górnego rogu w osi X oraz w osi Y, pozycja środka tego zaznaczenia w odniesieniu od środka ekranu (left, right, top, bottom) oraz odległość tego zaznaczenia od środka obrazu w osi X i Y
 
@@ -97,18 +97,18 @@ Dodatkową funkcją programu jest możliwość zapisania danych do pliku tekstow
 <p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/5b9c1ccb-1544-4b63-a660-e38b3b336449"></p>
 
 ### Informacje o programie
-Program ten jest rozwiązaniem 4 zadania, znadjuje się w folderze **_qrCode_** i składa się z dwóch plików,   
+Program ten jest rozwiązaniem czwartego zadania, znajduje się w folderze **_qrCode_** i składa się z dwóch plików,   
 aplikacji ```app.py``` oraz algorytmów przekształcających i rozpoznających kody QR ```backend.py```
 
 ### Zasada działania
-Kiedy użytkownik zaimportuje kod QR i naciśnie przycisk ```detect QR```, program wykona poniższe funkcje. Jeżeli jednej z poniższych funkcji uda się odczytać kod qr, pozostałe nie zostaną wykonane:     
+Kiedy użytkownik zaimportuje kod QR i naciśnie przycisk ```detect QR```, program wykona poniższe funkcje. Jeżeli jednej z poniższych funkcji uda się odczytać kod QR, pozostałe nie zostaną wykonane:     
 Najpierw program zastosuje poszczególne filtry dla pierwotnego zdjęcia:     
-* znajdzie rogi kodu qr i go "wyprostuje" poczym spróbuje odczytać kod QR
+* znajdzie rogi kodu QR i go "wyprostuje" poczym spróbuje odczytać kod QR
 * zastosuje rozmycie Gaussa i spóbuje odczytać kod QR
 * użyje funkcji ```fixBlur()```, której zadaniem jest pozbycie się rozmazania obrazu, nastęnie spróbuje odczytać kod QR
   
 Jeżeli żadnej z powyższych funkcji nie udało się odczytać kodu QR program zastosuje poszczególne filtr dla zdjęcia wcześniej zmodyfikowanego. Program:
-* znajdzie rogi kodu qr i go "wyprostuje" poczym spróbuje odczytać kod QR
+* znajdzie rogi kodu QR i go "wyprostuje" poczym spróbuje odczytać kod QR
 * użyje zdjęcia uzyskanego przez użycie powyższego filtra i zastosuje rozmycie Gaussa, a następnie spróbuje odczytać kod QR
 * wykona funkcję ```fixBlur()``` na zdjęciu uzyskanym po zastosowaniu rozmycia Gaussa i spróbuje odczytać kod QR
   
