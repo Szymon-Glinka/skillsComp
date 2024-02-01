@@ -46,8 +46,32 @@ NP.
 Aby wyświetlić dane do debagowania należy w poniższej lini zmienić **_level=logging.ERROR_** na **_level=logging.DEBUG_**   
 ```logging.basicConfig(level=logging.ERROR, format="%(asctime)s %(levelname)s %(message)s", datefmt="%y-%m-%d %H:%M")```
 
+
 # PID
 <p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/a8ec10c5-6833-4c41-a882-81c891f7b855"></p>
+
+### Informacje o programie
+Ta aplikacja jest rozwiązaniem 2 zadania, znajduje się w folderze **_pid_** i składa się z dwóch plików,    
+aplikacji ```app.py``` oraz algorytmu PID i obiektu sterowanego w pliku ```pid.py```
+
+### Obiekt sterowany
+Poniżej został przedstawiony użyty obiekt drugiego rzędu, którym steruje regulator PID.
+<p align="center"><img width="200" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/cb9bb9f6-730f-4670-824b-38677b2fcbfa"></p>
+
+### Zasada działania
+Program pobiera dane wprowadzone przez użytkownika i używa ich do symulacji regulatora PID. Aby wyświetlić wykres symulacji należy nacisnać przycisk ```Submit```   
+Jeżeli opcja ```Ziegler-nichols autotuning``` nie jest zaznaczona, użytkownik może ręcznie dobierać nastawy (za pomocą suwaków lub wprowadzając z klawiatury)   
+Jeżeli opcja ```Zeigler-nichols autotuning``` jest zaznaczona, program wyświetli wykres symulacji regulatora PID dla nastaw obliczonych za pomocą metody Zeiglera-nicholsa
+
+### Metoda dobierania nastaw Zeiglera-nicholsa
+Oscylacja układu zostałą wyznaczona eksperymentalnie, używając ręcznej manipulacji nastaw aplikacji.   
+Układ oscyluje przy nastawach: Ki = 0, Kd = 0, Ki = 7.(27)  czyli Ku = 7.(27)   
+Okres oscylacji układu (Tu): 0.1s   
+Do wyznaczenia nastaw użyłem poniższych wzorów znalezionych w internecie:  
+* Kp = 0.6 * Ku = 0.6 * 7.(27) = +-4.36
+* Ki = 0.5 * Tu = 0.5 * 0.1 = 0.05
+* Kd = 0.125 * Tu = 0.125 * 0.1 = 0.0125
+
 
 # ColorRecognition
 <p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/f139313b-e086-4672-896f-35e4f989a99e"></p>
@@ -63,6 +87,7 @@ Kiedy użytkownik zaimportuje wyprany obraz i naciśnie przycisk ```Detect Color
 
 ### Zapisywanie danych do pliku tekstowego
 Dodatkową funkcją programu jest możliwość zapisania danych do pliku tekstowego przyciskiem ```Plot Data```
+
   
 # ReadingQR
 <p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/5b9c1ccb-1544-4b63-a660-e38b3b336449"></p>
