@@ -61,7 +61,12 @@ Poniżej został przedstawiony użyty obiekt drugiego rzędu, którym steruje re
 ### Zasada działania
 Program pobiera dane wprowadzone przez użytkownika i używa ich do symulacji regulatora PID. Aby wyświetlić wykres symulacji należy nacisnać przycisk ```Submit```   
 Jeżeli opcja ```Ziegler-nichols autotuning``` nie jest zaznaczona, użytkownik może ręcznie dobierać nastawy (za pomocą suwaków lub wprowadzając z klawiatury)   
-Jeżeli opcja ```Zeigler-nichols autotuning``` jest zaznaczona, program wyświetli wykres symulacji regulatora PID dla nastaw obliczonych za pomocą metody Zeiglera-nicholsa
+Jeżeli opcja ```Zeigler-nichols autotuning``` jest zaznaczona, program wyświetli wykres symulacji regulatora PID dla nastaw obliczonych za pomocą metody Zeiglera-nicholsa   
+Dodatkowo użytkownik może zmienić poniższe wartości:
+* Cel symulacji, domyślnie 100
+* Wartość początkową, domyślnie 0
+* ilość powtórzeń, domyślnie 250
+* zmianę czasu, domyślnie 0.1
 
 ### Metoda dobierania nastaw Zeiglera-nicholsa
 Oscylacja układu zostałą wyznaczona eksperymentalnie, używając ręcznej manipulacji nastaw aplikacji.   
