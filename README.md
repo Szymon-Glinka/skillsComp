@@ -3,8 +3,8 @@
 </p>
 <p align="center">
   <img alt="Static Badge" src="https://img.shields.io/badge/skillsComp-Robotyka_Mobilna-blue">
-  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/Szymon-Glinka/skillsComp">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Szymon-Glinka/skillsComp">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/Szymon-Glinka/skillsComp-semifinals">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Szymon-Glinka/skillsComp-semifinals">
 </p>
 
 # O projekcie
