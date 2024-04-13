@@ -10,7 +10,7 @@
 
 # Tłumaczenia:
 * [en](https://github.com/Szymon-Glinka/skillsComp-semifinals/edit/main/README.md)
-* [pl]()
+* [pl](https://github.com/Szymon-Glinka/skillsComp-semifinals/blob/main/README.pl.md)
 
 # O projekcie
 To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp - Robotyka Mobilna](https://skillscomp.itee.radom.pl/service/robotyka-mobilna/) razem z wszystkimi plikami użytymi podczas tworzenia tych programów (foldery ```test```).  
