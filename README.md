@@ -7,16 +7,17 @@
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Szymon-Glinka/skillsComp-semifinals">
 </p>
 
+# THIS TRANSLATION IS BEING MADE. PLEASE BE PATIENT
 
-# Tłumaczenia:
+# Translations:
 * [ENGLISH](https://github.com/Szymon-Glinka/skillsComp-semifinals/edit/main/README.md)
 * [POLSKI](https://github.com/Szymon-Glinka/skillsComp-semifinals/blob/main/README.pl.md)
 
-# O projekcie
-To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp - Robotyka Mobilna](https://skillscomp.itee.radom.pl/service/robotyka-mobilna/) razem z wszystkimi plikami użytymi podczas tworzenia tych programów (foldery ```test```).  
-*logo zostało wygenerowane przy pomocy [simple logo generator](https://creecros.github.io/simple_logo_gen/)*
+# About the project
+This repository contains solutions for semifinal tasks for [SkillsComp - Robotyka Mobilna](https://skillscomp.itee.radom.pl/service/robotyka-mobilna/) with all the files used to develop those solutions (folders labeled```test```).  
+*logo has been generated using [simple logo generator](https://creecros.github.io/simple_logo_gen/)*
 
-# Spis treści:
+# Table of contents:
 * [Maze Solver](#MazeSolver)
 * [PID](#PID)
 * [Color Recognition](#ColorRecognition)
@@ -25,13 +26,13 @@ To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp 
 # MazeSolver
 <p align="center"><img width="800" src="https://github.com/Szymon-Glinka/skillsComp/assets/131162335/f0805cfc-add5-4541-b7c3-a47464567184"></p>
 
-### Informacje o programie
-Program ten jest rozwiązaniem pierwszego zadania, znajduje się w folderze **_maze_**.
-Program rozwiązujący labirynty składa się z dwóch plików Python'a: ```mazeSolver.py``` i ```backendSolvable.py``` 
-W pliku ```backendSolvable.py``` znajdują się wszystkie funkcje używane do rozwiązania labiryntu, importowania labiryntu z pliku tekstowego, przygotowywania zaimportowanego labiryntu do rozwiązania, znajdowania początku labiryntu i wytaczania ścieżki do wyjscia.  
-W pliku ```mazeSolver.py``` znajduje się funckja rozwiązująca labirynt (sprawdzanie czy da się go rozwiązać, jeśli się nie da to dlaczego) przy pomocy wszystkich funkcji w pliku ```backendSolvable.py```.   
+### Informations about program
+This code is a solution for first problem **_maze_**.
+Maze solving algorythm is in two python files: ```mazeSolver.py``` and ```backendSolvable.py``` 
+File labeled ```backendSolvable.py``` contains all modules used to read maze from a file, dfs, path ploting. 
+File labeled ```mazeSolver.py``` uses all moduls from ```backendSolvable.py``` and solves the maze.   
 
-### Zasada działania
+### How it works
 Program sprawdza czy dookoła obecnego położenia są wolne komórki - " ", jeżeli tak zapisuje wszystkie pozycje do których jest w stanie *przejść* w następnym kroku. Następnie wykonuje możliwy ruch usuwając go jednocześnie z listy ruchów możliwych do wykonania, a poprzednią pozycje dodaje do tabeli z poprzednimi popzycjami. Jeżeli dana pozycja nie ma żadnego możliwego ruchu do wykonania, progam wraca do innych możliowych pozycji (jeżeli takie zostały zapisane podczas np. jakiegoś rozwidlenia).  
 Algorytm zwraca ```True``` jeżeli dotarł do wyjścia **E** i liste z dokładnym rozwiązaniem labiryntu, np. **_['RIGHT', 'RIGHT', 'RIGHT', 'DOWN', 'DOWN', 'DOWN']_**. Jeżeli program nie jest we stanie dotrzeć do wyjścia zwróci ```False``` oraz dlaczego nie rozwiązał labiryntu, np. **_E3 - multiple starting positions for letter 'r'_** - oznacza, to że w podanym labiryncie znajduje się więcej niż jedno rozpoczęcie (więcej niż jedna litera, od której program ma zacząć rozwiązywanie)
 
