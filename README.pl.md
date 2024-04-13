@@ -7,6 +7,10 @@
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Szymon-Glinka/skillsComp-semifinals">
 </p>
 
+# Tłumaczenia:
+* [en](https://github.com/Szymon-Glinka/skillsComp-semifinals/edit/main/README.md)
+* [pl](https://github.com/Szymon-Glinka/skillsComp-semifinals/blob/main/README.pl.md)
+
 # O projekcie
 To repzytorium zawiera rozwiązane wszystkie zadania półfinałowe [SkillsComp - Robotyka Mobilna](https://skillscomp.itee.radom.pl/service/robotyka-mobilna/) razem z wszystkimi plikami użytymi podczas tworzenia tych programów (foldery ```test```).  
 *logo zostało wygenerowane przy pomocy [simple logo generator](https://creecros.github.io/simple_logo_gen/)*
